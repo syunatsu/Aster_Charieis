@@ -1580,9 +1580,7 @@ footer {
   }
 
   .backtotop:hover a .fa-arrow-up {
-    position: absolute;
     color: #fff;
-    z-index: 100;
   }
   
   .fa-arrow-up {
