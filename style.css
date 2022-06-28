@@ -119,7 +119,7 @@ header {
   height: 100vh;
   width: 60vw;
   padding: 25px;
-  z-index: 3;
+  z-index: 1000;
   transform: translateX(500px);
   opacity: 0;
   transition: all 0.4s;
@@ -1562,25 +1562,17 @@ footer {
     position: absolute;
     top: 0;
     right: 100px;
-    z-index: 100;
+    z-index: 1;
     transform: translateY(-50%);
     background-color: #fff;
     padding: 10px 15px;
     outline: 1px solid #cbcbcb;
     cursor:pointer;
+    transition: background-color 0.4s;
   }
 
-  .backtotop a::after {
-    content: '';
+  .backtotop:hover {
     background-color: #6e5a40;
-    outline: 1px solid #cbcbcb;
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 60px;
-    height: 60px;
-    transform: scale(0, 0);
-    transition: transform ease 0.4s;
   }
 
   .backtotop a .fa-arrow-up {
@@ -1591,10 +1583,6 @@ footer {
     position: absolute;
     color: #fff;
     z-index: 100;
-  }
-
-  .backtotop:hover a::after {
-    transform: scale(1.1, 1.1);
   }
   
   .fa-arrow-up {
